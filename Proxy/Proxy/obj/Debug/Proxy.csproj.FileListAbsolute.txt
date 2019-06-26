@@ -1,0 +1,7 @@
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\bin\Debug\Proxy.exe.config
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\bin\Debug\Proxy.exe
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\bin\Debug\Proxy.pdb
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\obj\Debug\Proxy.csprojAssemblyReference.cache
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\obj\Debug\Proxy.exe
+E:\Users\Akbar\Desktop\dotnetchallenge2019.5-master\Proxy\Proxy\obj\Debug\Proxy.pdb
