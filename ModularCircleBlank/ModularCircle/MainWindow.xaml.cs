@@ -63,15 +63,15 @@ namespace ModularCircle
             //todo: из каждой точки на окружности провести линию, используя метод DrawLine
             //Номер точки, в которую нужно вести линию вычисляется по формуле из видео
 
-            for (int firstPoint = 0; firstPoint <= _circlePointCount; firstPoint++)
-            {
+          
+                for (int firstPoint = 0; firstPoint < _circlePointCount; firstPoint++)
+                    {
 
-                double secondPoint = firstPoint *  _factor % _circlePointCount;
+                        double secondPoint = firstPoint * _factor % _circlePointCount;
 
-                DrawLine(circlePoints[firstPoint], circlePoints[Convert.ToInt32(secondPoint)], _lineBrush);
+                        DrawLine(circlePoints[firstPoint], circlePoints[Convert.ToInt32(secondPoint)], _lineBrush);
 
-            }
-
+                    }
         }
 
         private void DrawLine(Point from, Point to, Brush brush)
