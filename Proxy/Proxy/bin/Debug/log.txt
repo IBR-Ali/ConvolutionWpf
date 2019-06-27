@@ -1,0 +1,1 @@
+CalcWind elapsed: 499  CalcClouds elapsed: 999 

@@ -24,20 +24,18 @@ namespace Proxy
                 switch (logType)
                 {
                     case "file":
-                        predictor.Calculator = new FileLogWeatherStateCalculator(new WeatherStateCalculator());
-                        predictor.PredictTemperature();
+                        predictor.Calculator = new FileLogWeatherStateCalculator(predictor.Calculator);
                         break;
 
                     case "console":
-                        predictor.Calculator = new ConsoleLogWeatherStateCalculator(new WeatherStateCalculator());
-                        predictor.PredictTemperature();
+                        predictor.Calculator = new ConsoleLogWeatherStateCalculator(predictor.Calculator);
                         break;
 
                     default:
                         break;
                 }
             }
-
+            predictor.PredictTemperature();
             Console.ReadLine();
         }
 
