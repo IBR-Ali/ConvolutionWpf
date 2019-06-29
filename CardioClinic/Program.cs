@@ -21,6 +21,8 @@ namespace CardioClinic
 
                 rockfeller.InstalHeart(ref type);
             }
+
+            Console.ReadLine();
         }
     }
 }
