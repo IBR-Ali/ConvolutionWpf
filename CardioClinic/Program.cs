@@ -40,7 +40,7 @@ namespace CardioClinic
                     return new PlasticHeart();
                     break;
                 case "t":
-                    return new PlasticHeart();
+                    return new TubeHeart();
                     break;
                 default:
                     Console.WriteLine(" This heart type is not ready. Do you want to choose another heart type? (y)es/(n)o");
