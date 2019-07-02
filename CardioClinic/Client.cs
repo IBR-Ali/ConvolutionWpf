@@ -8,29 +8,13 @@ using System.Threading.Tasks;
 namespace CardioClinic
 {
     class Client
-    {
-        public void InstalHeart(ref string heartType)
+    {    
+        private IHeart _heart;
+
+        public void InstalHeart(IHeart heart)
         {
-            switch(heartType)
-            {
-              case "h":
-                  new HumanHeart().Connect();
-                  break;
-              case "p":
-                  new PlasticHeart().Connect();
-                  break;
-              case "t":
-                  new PlasticHeart().Connect();
-                  break;
-              default:
-                  Console.WriteLine(" This heart type is not ready. Do you want to choose another heart type? (y)es/(n)o");
-                  string choose = Console.ReadLine();
-                  if (choose == "y")
-                  {
-                      heartType = null;
-                  }
-                  break;
-            }
+            _heart = heart;
+            heart.Connect();
         }
     }
 }

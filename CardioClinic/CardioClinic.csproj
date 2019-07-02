@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="Hearts\EmptyHeart.cs" />
     <Compile Include="Hearts\HumanHeart.cs" />
     <Compile Include="Hearts\PlasticHeart.cs" />
     <Compile Include="Hearts\TubeHeart.cs" />
