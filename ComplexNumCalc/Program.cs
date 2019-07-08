@@ -8,8 +8,10 @@ namespace ComplexNumCalc
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+           
             Console.Write("Введите действительную часть первого комплексного числа: ");
             int realPart = Int32.Parse(Console.ReadLine());
             Console.Write("Введите мнимую часть первого комплексного числа: ");
@@ -21,21 +23,25 @@ namespace ComplexNumCalc
             Console.Write("Введите мнимую часть второго комплексного числа: ");
             imaginaryPart = Int32.Parse(Console.ReadLine());
             ComplexNumber secondNumber = new ComplexNumber(realPart, imaginaryPart);
+                
 
             Console.Write("Выберите производимое действие: (с)ложение, (в)ычитание, (у)множение. ");
             string operation = Console.ReadLine();
-            Calculator calc = new Calculator();
 
+            ComplexNumber result = new ComplexNumber();
             switch (operation)
             {
                 case "с":
-                    calc.Addition(firstNumber, secondNumber);
+                    result.Add(firstNumber, secondNumber, ref result);
+                    Console.WriteLine(result.GetResult());
                     break;
                 case "в":
-                    calc.Subtraction(firstNumber, secondNumber);
+                    result.Substract(firstNumber, secondNumber, ref result);
+                    Console.WriteLine(result.GetResult());
                     break;
                 case "у":
-                   calc.Multiplication(firstNumber, secondNumber);
+                    result.Multiply(firstNumber, secondNumber, ref result);
+                    Console.WriteLine(result.GetResult());
                     break;
                 default:
                     Console.WriteLine("Данное действие недопустимо");
